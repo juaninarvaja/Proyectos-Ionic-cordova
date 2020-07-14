@@ -1,0 +1,89 @@
+
+<ion-content *ngIf="!(mostrar)" color="success">
+  <ion-header>
+      <ion-toolbar color="dark">
+        <ion-title text-center>Iniciar sesión</ion-title>
+      </ion-toolbar>
+    </ion-header>
+  <br>
+  <!-- <img class="imagenLogin" src= "descarga.png"> -->
+  <img class="imagenLogin" src= "../../../assets/img/icon.png">
+<ion-item color="success">
+<ion-icon name="contact"></ion-icon>
+<ion-label position= "floating">Correo electrónico</ion-label> <br>
+<ion-input type="text" [(ngModel)]="email"  name= "email"></ion-input>
+
+</ion-item>
+<br>
+<ion-item color="success">
+  <ion-icon name="lock"></ion-icon>
+<ion-label position= "floating">Contraseña</ion-label><br>
+<ion-input type="password" [(ngModel)]="password" name= "contraseña"></ion-input>
+</ion-item>
+<br>
+<ion-button (click)="onSubmitLogin()" expand= "block" color="dark">Entrar</ion-button>
+<br>
+<ion-button (click)="registrarse()" expand= "block" color="dark">Registrarse</ion-button>
+
+
+
+
+    <!-- <button ion-button round>Round Button</button>
+  <ion-fab-button color="success">
+    <ion-icon name="person"></ion-icon>
+  </ion-fab-button>
+  <ion-fab-list side="start"> -->
+    <br>
+    <div class="divBotones">
+        <ion-button color="dark"  class="botones" (click)="cargarDatos('admin')">
+            Adm
+          </ion-button>
+          <ion-button color="dark"  class="botones" (click)="cargarDatos('invitado')">
+            Inv
+          </ion-button>
+          <ion-button  color="dark"  class="botones" (click)="cargarDatos('usuario')">
+              Usu
+            </ion-button>
+        
+            <ion-button color="dark"  class="botonesDown" (click)="cargarDatos('anonimo')">
+              Anón
+            </ion-button>
+            <ion-button color="dark" class="botonesDown"  (click)="cargarDatos('tester')">
+              Test
+            </ion-button>
+    </div>
+
+    
+  <!-- </ion-fab-list> -->
+
+
+
+
+</ion-content>
+
+<ion-content *ngIf="mostrar">
+  <ion-header>
+      <ion-toolbar color="dark">
+        <ion-title text-center >Registrarse</ion-title>
+      </ion-toolbar>
+    </ion-header>
+<br>
+<!-- <img class="imagenLogin" src= "descarga.png"> -->
+<img class="imagenLogin" src= "../../../assets/img/icon.png">
+<ion-item>
+<ion-icon name="contact"></ion-icon>
+<ion-label position= "floating">Correo electrónico</ion-label> <br>
+<ion-input type="text" [(ngModel)]="email"  name= "email"></ion-input>
+
+</ion-item>
+<br>
+<ion-item>
+<ion-icon name="lock"></ion-icon>
+<ion-label position= "floating">Contraseña</ion-label><br>
+<ion-input type="password" [(ngModel)]="password" name= "contraseña"></ion-input>
+</ion-item>
+<br>
+<ion-button (click)="regresar()" expand= "block" color="dark">Regresar</ion-button>
+<br>
+<ion-button (click)="aceptar()" expand= "block" color="dark">Aceptar</ion-button>
+</ion-content>

@@ -1,0 +1,223 @@
+
+ion-segment {
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+
+    ion-segment-button {
+        min-height: 100% !important;
+        margin: 0 !important;
+        --indicator-color-checked: #4c8dff !important;
+        background-color: #4c8dff !important;
+    }
+
+}
+
+ion-grid{
+    height: 100%;
+    width: 100%;
+    margin: 0 !important; 
+    padding: 0;
+}
+
+ion-row{    
+    width: 100% !important;
+    margin: 0;    
+    padding: 0;
+}
+
+ion-col{
+    width: 100% !important;
+    margin: 0;    
+    padding: 0;
+}
+
+.outlet {    
+    height: 90%;
+}
+
+.footer {
+    height: 10%;
+    background-color: rgb(0, 68, 255);
+}
+
+.desactivado {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    background-color: #d7d8da !important;
+}
+
+
+ion-button {     
+    height: 100% !important;
+    width: 100% !important;
+    margin: 0 !important; 
+    padding: 0 !important;
+    border: 0;
+    
+}
+ion-icon{
+ &[class*="spanish"]{
+    background-image: url('../../assets/img/flag-spain.png');
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: contain;
+    width: 90%;
+    height: 90%;
+ }
+ &[class*="english"]{
+    background-image: url('../../assets/img/flag-english.png');
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: contain;
+    width: 90%;
+    height: 90%;
+    
+    
+ }
+ &[class*="portugues"]{
+    
+    background-image: url('../../assets/img/flag-portugal.png');
+    background-repeat: no-repeat ;
+    background-position: center ; 
+    background-size: contain ;
+    width: 90%;
+    height: 90%;
+   
+ }
+ &[class*="lenguajes"]{
+    
+    background-image: url('../../assets/img/lenguajes.ico');
+    background-repeat: no-repeat ;
+    background-position: center ; 
+    background-size: contain ;
+    width: 100%;
+    height: 100%;
+    // background-color: rgb(0, 68, 255);
+ }
+ &[class*="temas"]{
+    
+    background-image: url('../../assets/img/tema.ico');
+    background-repeat: no-repeat ;
+    background-position: center ; 
+    background-size: contain ;
+    width: 100%;
+    height: 100%;
+    // background-color: rgb(0, 68, 255);
+ }
+ &[class*="animals"]{
+    
+    background-image: url('../../assets/img/penguin.ico');
+    background-repeat: no-repeat ;
+    background-position: center ; 
+    background-size: contain ;
+    width: 100%;
+    height: 100%;
+    // background-color: rgb(0, 68, 255);
+ }
+ &[class*="numbers"]{
+    
+    background-image: url('../../assets/img/numbers.ico');
+    background-repeat: no-repeat ;
+    background-position: center ; 
+    background-size: contain ;
+    width: 100%;
+    height: 100%;
+    // background-color: rgb(0, 68, 255);
+ }
+ &[class*="colors"]{
+    
+    background-image: url('../../assets/img/color.ico');
+    background-repeat: no-repeat ;
+    background-position: center ; 
+    background-size: contain ;
+    width: 100%;
+    height: 100%;
+    // background-color: rgb(0, 68, 255);
+ }
+}
+
+
+.idiomas {
+    background-color: rgb(0, 68, 255);
+    height: 6%;
+    width: 100%;
+    background-size: contain;
+    align-items: center;
+    border-bottom: 0px;
+    position: absolute;
+    bottom: 0;
+    // background-color: red;
+}
+.botonIdiomas {
+    height: 80%;
+    width: 10%;
+    background-size: contain;
+    position: relative;
+    
+}
+.tema {
+    background-color: rgb(48, 136, 84);
+    height: 6%;
+    width: 100%;
+    background-size: contain;
+    align-items: center;
+    // background-color: red;
+}
+.botonTemas {
+    height: 80%;
+    width: 10%;
+    background-size: contain;
+    position: relative;
+    
+}
+.botonChoose 
+{
+    height: 40px;
+    width: 40px;
+    background-size: contain;
+    position: relative;
+}
+
+
+ion-grid.datos{
+    height: 100%;
+    margin: 0 !important; 
+    padding: 0;
+}
+
+ion-row.datos{    
+    height: 100% !important;
+    width: 100% !important;
+    margin: 0;    
+    padding: 0;
+}
+
+ion-col.datos{
+    width: 100% !important;
+    margin: 0;    
+    padding: 0;
+}
+.spinner {
+
+  
+  /* IMPORTANTE */
+  width: 70px;
+  height: 70px;
+  margin-left: auto;
+  margin-right: auto;
+ }
+ .divSpinner {
+    background-color: rgb(48, 136, 84);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    height: 100%;
+}
+// ion-spinner{
+//     width: 280px;
+//     height: 280px;
+//     stroke: #444;
+//     fill: #222;
+//   }

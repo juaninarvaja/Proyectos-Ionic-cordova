@@ -1,0 +1,67 @@
+<div class="cosa">
+    <h1 class="text">
+      Cosas Feas
+    </h1>
+  </div>
+  
+          <ion-segment class="pad" [(ngModel)]="modo">
+              <ion-segment-button value="allPhotos">
+                  <ion-label selected >Todas las fotos</ion-label>
+                </ion-segment-button>
+                <ion-segment-button value="myPhotos">
+                  <ion-label>Mis fotos</ion-label>
+                </ion-segment-button>
+            </ion-segment>
+        
+  
+  
+  <ion-slides  *ngIf="(modo ==='allPhotos')" class="slides">
+    <!-- Foto -->
+  
+  
+    <ion-slide  class="slides" *ngFor="let dato of arrayCosasFeas">
+      <div class="container" >
+          <img class="picture" src='{{dato.link}}' style="width:100%;"/>
+          <h3 class="usuario">{{dato.usuario}}</h3>
+          <h3 class="fecha">{{dato.fecha}}</h3>
+          <h3>{{dato.votos}}
+              <div (click)="likear(dato)"><ion-icon name="heart"></ion-icon></div>
+          </h3>       
+      </div>
+     
+    </ion-slide>
+    <button type="submit" float-left ion-button  color="primary" class="btnPrev" (click)="prev()">Prev</button>
+  <button type="submit" float-right ion-button color="primary" class="btnNext" (click)="next()">Next</button>
+  </ion-slides> 
+ 
+  <ion-slides  *ngIf="(modo ==='myPhotos')" class="slides">
+      <!-- Foto -->
+    
+      <ion-slide  class="slides" *ngFor="let dato of arrayMisCosasFeas">
+        <div class="container" >
+            <img class="picture" src='{{dato.link}}' style="width:100%;"/>
+            <h3 class="usuario">{{dato.usuario}}</h3>
+            <h3 class="fecha">{{dato.fecha}}</h3>
+            <h3>{{dato.votos}}
+                <div (click)="likear(dato)"><ion-icon name="heart"></ion-icon></div>
+            </h3> 
+        
+        </div>
+    
+      </ion-slide>
+    </ion-slides>
+  
+  
+  
+  
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="start">
+  
+      <ion-fab-button (click)="tomarFoto('fea')">
+        <ion-icon name="camera"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>

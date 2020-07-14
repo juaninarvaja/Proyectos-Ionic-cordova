@@ -1,0 +1,77 @@
+
+<div *ngIf="showSpinner" class= "divSpinner"><ion-spinner   class= "spinner" duration="1000" ></ion-spinner>
+</div>
+ <ion-content>
+  
+  
+    
+    <!-- <ion-row class="outlet">
+      <ion-col size="12">
+        <ion-router-outlet>
+            <ion-grid class = "datos" fixed>
+                <ion-row class = "datos">
+                  <ion-col class = "datos" size="12">
+                    <ion-button color="warning" class="animals" expand="full" fill="outline" routerLink="/main/animals"
+                      routerDirection="forward"></ion-button>
+                  </ion-col>
+                  <ion-col size="12">
+                    <ion-button color="success" class="colors" expand="full" fill="outline" routerLink="/main/colors"
+                    routerDirection="forward"></ion-button>
+                  </ion-col>
+                  <ion-col size="12">
+                    <ion-button color="secondary" class="numbers" expand="full" fill="outline" routerLink="/main/numbers"
+                    routerDirection="forward"></ion-button>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+        </ion-router-outlet>
+      </ion-col>
+    </ion-row>  -->
+
+
+
+
+
+    <ion-fab  class= "tema" >
+        <ion-fab-button class= "botonTemas" vertical="top">
+          <ion-icon class="temas" ></ion-icon>
+        </ion-fab-button>
+        <ion-fab-list side="start">
+          <ion-fab-button class="botonChoose" >
+            <ion-icon class= "animals" routerLink="/main/animals"></ion-icon>
+          </ion-fab-button>
+          <ion-fab-button  class="botonChoose">
+            <ion-icon class= "colors" routerLink="/main/colors"></ion-icon>
+          </ion-fab-button>
+          <ion-fab-button  class="botonChoose">
+              
+              <ion-icon class="numbers" routerLink="/main/numbers"></ion-icon>
+            </ion-fab-button>
+        </ion-fab-list>
+
+        
+
+
+      </ion-fab>
+  
+
+  <ion-fab  class= "idiomas" vertical="bottom">
+      <ion-fab-button class= "botonIdiomas">
+        <ion-icon class="lenguajes" ></ion-icon>
+      </ion-fab-button>
+      <ion-fab-list side="start" >
+        <ion-fab-button class="botonChoose">
+          <ion-icon class= "portugues" (click)="languageChanged('Portugués')"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-button class="botonChoose">
+          <ion-icon class= "english" (click)="languageChanged('English')"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-button class="botonChoose">
+            
+            <ion-icon class="spanish"(click)="languageChanged('Spanish')"></ion-icon>
+          </ion-fab-button>
+      </ion-fab-list>
+    </ion-fab>
+  
+
+</ion-content>

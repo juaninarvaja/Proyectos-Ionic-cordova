@@ -1,0 +1,19 @@
+<div *ngIf="showSpinner" class= "divSpinner"><ion-spinner   class= "spinner" duration="2000" ></ion-spinner>
+</div>
+<div *ngIf="!showSpinner"style="height:100%; background-color: rgb(0, 0, 0)">
+        <div class="visor ion-text-center">
+            <h1>Credito disponible: {{scannedResult}}</h1>
+        </div>
+        <div class="camara" (click)="scanCode()">
+            <img class="icon" src="assets/img/lector.ico">
+        </div>
+        <br>
+        <div class="borrar">
+          <ion-button  (click)='Borrar()' class="boton">
+            <h1>Borrar Creditos</h1>
+          </ion-button>
+        </div>
+      </div>
+      <!-- <ion-button  (click)='cargar100()' >
+          <h1>hardcodeo codigo 100</h1>
+        </ion-button> -->

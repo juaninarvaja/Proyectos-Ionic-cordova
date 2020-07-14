@@ -1,0 +1,10 @@
+  
+  <div *ngIf="showSpinner" class= "divSpinner"><ion-spinner   class= "spinner" duration="1000" ></ion-spinner>
+  </div>
+  
+  <ion-button *ngIf="!(showSpinner)"  (click)='toActivarAlarma()' fill='clear'  [color]='color' class="total">
+    <div class="total2">
+      <ion-icon [color]='color' class="icono" slot="start" [name]="icon"></ion-icon><br>
+      <h1 class="texto">{{estado}}</h1>
+    </div>
+  </ion-button>
